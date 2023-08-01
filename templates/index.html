@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Similarity & Summarizer</title>
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+     <!-- Color Selection Dropdown -->
+     <div class="color-selection">
+        <label for="dashboard-color">Select Dashboard Color:</label>
+        <select id="dashboard-color" onchange="changeDashboardColor()">
+            
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="red">Red</option>
+        </select>
+    </div>
+    <!-- Dashboard Section -->
+    <div class="dashboard">
+        <h2>Welcome to the Text Similarity Checker Dashboard</h2>
+        <p>Here you can compare text similarity, view word counts, and summaries of text.</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h1>Text Similarity & Summarizer</h1>
+        <div class="input-area">
+            <label for="text1">Text 1:</label><br>
+            <textarea id="text1" rows="8" cols="50" placeholder="Enter text for Text 1"></textarea>
+        </div>
+        <div class="input-area">
+            <label for="text2">Text 2:</label><br>
+            <textarea id="text2" rows="8" cols="50" placeholder="Enter text for Text 2"></textarea>
+        </div>
+        <div class="button-group">
+        <button class="compare-btn" onclick="compareText()">Compare</button>
+        <button class="clear-btn" onclick="clearText()">Clear</button>
+        
+        </div>
+        <div id="result"></div>
+      
+   
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

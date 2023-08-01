@@ -1,0 +1,146 @@
+/* Apply styles to the entire body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Style for the dashboard section */
+.dashboard {
+    background-color:  #179133;;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the h2 and p elements inside the dashboard */
+.dashboard h2 {
+    font-size: 24px;
+}
+
+.dashboard p {
+    font-size: 16px;
+}
+
+/* Create a container for the main content */
+.container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the container horizontally */
+}
+
+h1 {
+    text-align: center;
+    color: #e85332;
+}
+
+div {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #6306ce;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e70909;
+}
+
+/* Add styling to the comparison results */
+#result {
+    margin-top: 20px;
+}
+
+#result p {
+    font-size: 16px;
+    
+    margin-bottom: 5px;
+}
+
+#result h3 {
+    font-size: 18px;
+    color: #007bff;
+    margin: 15px 0 5px;
+}
+
+
+
+
+
+#result p.summary-text {
+    font-weight: bold;
+}
+
+
+#result p.similarity-text,
+#result p.word-count-text {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.black {
+    color: black;
+}
+.color-selection {
+    margin-bottom: 10px;
+}
+.dashboard.blue {
+    background-color: #065fbe;
+    color: white;
+}
+
+.dashboard.green {
+    background-color: #179133;
+    color: white;
+}
+
+.dashboard.orange {
+    background-color: #db6607;
+    color: white;
+}
+
+.dashboard.yellow {
+    background-color: #d9c808;
+    color: white;
+}
+.dashboard.red {
+    background-color: #ce071b;
+    color: white;
+}
+
+
+/* Style for the button group */
+.button-group {
+    margin-top: 20px; /* Add some space between the textareas and the buttons */
+}
+
+/* Style for the Compare button */
+.compare-btn {
+    margin-right: 10px; /* Add some space between the Compare and Clear buttons */
+}
+
+/* Style for the Clear button */
+.clear-btn {
+    margin-top: 10px; /* Move the Clear button down by 10px */
+}
